@@ -1,0 +1,37 @@
+Recursion: 
+
+JavaScript
+  Book                                    Pages
+  - Data Structures and
+    Algorithms with Javascript            10, 56
+  
+  - Functional Programmin in Javascript   77, 186, 197, 199, 226
+
+  - JavaScript Cookbok                    101, 109, 103
+
+  - JavaScript: The Good Parts            34, 36
+
+  - Learning JavaScript                   196, 113
+  
+  - Learning JavaScript Data Structures
+    and Algorithms                        338
+
+  - Murach's JavaScript, 2nd Ecition      456
+
+  - Refactoring JavaScript                390
+
+  - 
+
+
+Ruby
+  Book
+  - The Well-Grounded Rubyist,
+    Third Edition                         533-537, 141
+
+  - The Ruby Way                          139, 27
+  
+
+C++
+  Book
+  - Think Like a Programmer               143
+
