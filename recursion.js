@@ -1,13 +1,13 @@
 /*
-  * Challenge 1)
-  * We have defined a funciton named rangeOfNumbers with two parameters. The
-  * function should return an array of integers which begins with a number
-  * represented by the firstNum parameter and ends with a number represented by
-  * the lastNumb parameter. The starting number will always be less than or equal to
-  * the ending number. Your function must use recursion by calling itself and not use
-  * loops of any kind. It should also work for cases where both firstNum and
-  * lastNum are the same.
-*/
+ * Challenge 1)
+ * We have defined a funciton named rangeOfNumbers with two parameters. The
+ * function should return an array of integers which begins with a number
+ * represented by the firstNum parameter and ends with a number represented by
+ * the lastNumb parameter. The starting number will always be less than or equal to
+ * the ending number. Your function must use recursion by calling itself and not use
+ * loops of any kind. It should also work for cases where both firstNum and
+ * lastNum are the same.
+ */
 function rangeOfNumbers(firstNum, lastNum) {
   if (firstNum === lastNum) {
     return [firstNum];
@@ -56,20 +56,16 @@ function multiply(arr, n) {
 }
 
 function multiply2(arr, n) {
-  if (n <= 0) 
-    return 1;
-  else 
-    return multiply(arr, n - 1) * arr[n - 1];
+  if (n <= 0) return 1;
+  else return multiply(arr, n - 1) * arr[n - 1];
 }
 // console.log(multiply(elements, 3));
 
 // countdownArray example
 function countDownArr(number, c = 0) {
-  if (number < 1)
-    return [];
-  
-  if (c === number) 
-    return [];
+  if (number < 1) return [];
+
+  if (c === number) return [];
   const result = countDownArr(number, c + 1);
   result.push(c + 1);
   return result;
@@ -78,12 +74,10 @@ function countDownArr(number, c = 0) {
 
 // countdown with shift
 function countdown(number) {
-  if (number < 1) 
-    return [];
+  if (number < 1) return [];
 
-  if (number <= 1)
-    return [number];
-  
+  if (number <= 1) return [number];
+
   const result = countdown(number - 1);
   result.unshift(number);
   return result;
@@ -98,45 +92,36 @@ sampleArr.unshift(3);
 // factorial of a number
 function factorial(n) {
   if (n < 1) {
-    console.log('Enter a valid number');
+    console.log("Enter a valid number");
     return;
   }
 
-  if (n === 1)
-    return 1;
-  else
-    return n * factorial(n - 1);
+  if (n === 1) return 1;
+  else return n * factorial(n - 1);
 }
 // console.log(factorial(5));
 
 // find the greatest common divisor (gdc) of two positive numbers
 
-
 // exponent of a number
 function exponent(base, exp) {
-  if (base < 1 || exp < 1) 
-    return;
+  if (base < 1 || exp < 1) return;
 
-  if (exp <= 1)
-    return base;
+  if (exp <= 1) return base;
   return base * exponent(base, exp - 1);
 }
 // console.log(exponent(8, 3));
 
 // fibonacci sequence
 function fibonacci(n) {
-  if (n < 0) 
-    return;
-  else if (n < 1)
-    return [0];
-  else if (n < 2)
-    return 1;
-  else{
-    const result = (n - 2) + fibonacci(n - 1);
-    
+  if (n < 0) return;
+  else if (n < 1) return [0];
+  else if (n < 2) return 1;
+  else {
+    const result = n - 2 + fibonacci(n - 1);
   }
 }
-// fibonacci(4);
+fibonacci(4);
 // console.log(fibonacci(4));
 // const recursion = confirm('recursion?');
 
@@ -148,3 +133,7 @@ function fib(n) {
 }
 
 console.log(fib(6));
+
+console.log("test");
+
+console.log("hola");
